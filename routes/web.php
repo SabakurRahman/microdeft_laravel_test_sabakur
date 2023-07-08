@@ -19,3 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/devloper',[DevloperController::class,'index'])->name('devloper.index');
+Route::post('/devloper/create',[DevloperController::class,'create'])->name('devloper.create');
+Route::get('/devloper/list',[DevloperController::class,'getList'])->name('devloper.list');

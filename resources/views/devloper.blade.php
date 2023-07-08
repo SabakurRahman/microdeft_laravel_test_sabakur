@@ -13,7 +13,7 @@
     <div class="row justify-content-center">
         <div class="col-sm-8">
             <div class="card mt-3 p-3">
-                <form method="POST" action="/product/store" enctype="multipart/form-data">
+                <form method="POST" action="/devloper/create" enctype="multipart/form-data">
                     @csrf 
                     <div class="form-group">
                         <label>Name</label>
@@ -44,25 +44,25 @@
                         @enderror
                     </div>
                     <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <input class="form-check-input" type="checkbox" value="php" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
    php
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <input class="form-check-input" type="checkbox" value="js" id="flexCheckChecked" checked>
   <label class="form-check-label" for="flexCheckChecked">
    js
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <input class="form-check-input" type="checkbox" value="laravel" id="flexCheckChecked" checked>
   <label class="form-check-label" for="flexCheckChecked">
    Laravel
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <input class="form-check-input" type="checkbox" value="React Js" id="flexCheckChecked" checked>
   <label class="form-check-label" for="flexCheckChecked">
    React Js
   </label>
