@@ -78,4 +78,12 @@ class DevloperController extends Controller
 
 
     }
+    public function delete($id){
+        //dd($id);
+        $devloper=Devloper::where('id',$id)->first();
+        $devloper->delete();
+        return redirect()->back()->with('success', 'employee Deleted Successfully');
+
+     }
+
 }
