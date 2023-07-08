@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::get('/devloper',[DevloperController::class,'index'])->name('devloper.index');
 Route::post('/devloper/create',[DevloperController::class,'create'])->name('devloper.create');
 Route::get('/devloper/list',[DevloperController::class,'getList'])->name('devloper.list');
+Route::get('/devloper/{id}/edit',[DevloperController::class,'editList'])->name('devloper.edit');
+Route::put('/devloper/{id}/update',[DevloperController::class,'updateList'])->name('devloper.update');

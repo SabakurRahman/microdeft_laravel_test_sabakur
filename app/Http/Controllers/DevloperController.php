@@ -45,4 +45,37 @@ class DevloperController extends Controller
          return view('devloperlist',compact('devloper'));
 
     }
+
+
+    public function editList($id){
+        $devloper=Devloper::where('id',$id)->first();
+     
+        return view('editdevloper',compact('devloper'));
+       
+
+
+    }
+
+    public function updateList(Request $request,$id){
+        $request->validate([
+            'name'=>'required',
+            'phone'=>'required',
+            'email'=>'required',
+            'designation'=>'required'
+           
+ 
+         ]);
+ 
+         $devloper=Devloper::where('id',$id)->first();
+      
+       $devloper->name=$request->name;
+       $devloper->phone=$request->phone;
+       $devloper->email=$request->email;
+       $devloper->designation=$request->designation;
+      
+       $devloper->save();
+        return redirect()->back()->with('success', 'Devloper update successfully');
+
+
+    }
 }

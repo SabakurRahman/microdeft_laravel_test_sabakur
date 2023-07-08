@@ -32,8 +32,8 @@
       <td>{{$devlopers->email}}</td>
       <td>{{$devlopers->phone}}</td>
       <td>{{$devlopers->designation}}</td>
-      <td><a href="product/{{$devlopers->id}}/edit" class="btn btn-success">Edit</a></td>
-      <td><a href="product/{{$devlopers->id}}/delete" class="btn btn-danger">delete</a></td>
+      <td><a href="devloper/{{$devlopers->id}}/edit" class="btn btn-success">Edit</a></td>
+      <td><a href="devloper/{{$devlopers->id}}/delete" class="btn btn-danger">delete</a></td>
     </tr>
     @endforeach
     
